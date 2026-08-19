@@ -449,9 +449,11 @@
           <p>One email, whenever the Den goes live or drops something worth your time. No noise, no funnel — just the pack keeping you in the loop. Run on our own infrastructure, not rented from anyone.</p>
         </div>
         <form method="post" action="https://list.alphamaxxing.xyz/subscription/form" target="_blank" rel="noopener">
-          <!-- TODO(infra): point action at the self-hosted Listmonk instance's
-               public subscription endpoint once it's deployed, and set the
-               correct list UUID as a hidden `l` field. Currently a placeholder host. -->
+          <!-- Self-hosted Listmonk (Ravens, via Cloudflare Tunnel). List:
+               "Alpha Den - ALPHAMAXX" (public, single opt-in). `nonce` is
+               Listmonk's honeypot field — must stay present + empty. -->
+          <input type="hidden" name="l" value="f125be8e-60b9-4766-ae0d-71a1a34a299d">
+          <input type="text" name="nonce" value="" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field-row">
             <input type="email" name="email" placeholder="you@wallet.xyz" required autocomplete="email">
           </div>

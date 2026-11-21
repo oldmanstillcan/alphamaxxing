@@ -11,9 +11,9 @@ The Alpha Den landing page — Saga DAO's weekly X Spaces show. Static site (Git
 
 Pulled from `space-forge`'s `captures` table (`title LIKE '%Alpha Den%'`, most recent 2 by `created_at`). Update the `.ep-list` block in `index.html` by hand for now; a sync script can replace this once the back-catalog is indexed.
 
-## Email list
+## Email list (removed)
 
-Signup form posts to a self-hosted Listmonk instance (not yet deployed — see the `TODO(infra)` comment in `index.html` for the placeholder endpoint).
+Removed 2026-11-20. The signup form posted to a self-hosted Listmonk instance (`list.alphamaxxing.xyz`), which is being retired. The form is in git history (commit `ba833fa`) if a list is ever wanted again.
 
 ## Deploy
 
